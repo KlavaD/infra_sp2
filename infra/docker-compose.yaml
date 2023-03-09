@@ -5,12 +5,12 @@ services:
   db:
     image: postgres:13.0-alpine
     volumes:
-      - /var/lib/postgresql/data/
+      - db_value:/var/lib/postgresql/data/
     env_file:
       - ./.env
   web:
-#    image: klavad/api_yamdb:latest
-    build: ../api_yamdb
+    image: klavad/api_yamdb:latest
+#    build: ../api_yamdb
     restart: always
     volumes:
       - static_value:/app/static/
@@ -30,5 +30,6 @@ services:
     depends_on:
       - web
 volumes:
+  db_value:
   static_value:
   media_value:
