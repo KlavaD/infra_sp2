@@ -85,16 +85,16 @@ cd api_yamdb
 ```
 
 Получение списка категорий:
->**GET** http://127.0.0.1:8000/api/v1/categories/
+>**GET** http://127.0.0.1/api/v1/categories/
 
 Получение списка жанров:
->**GET** http://127.0.0.1:8000/api/v1/genre/
+>**GET** http://127.0.0.1/api/v1/genre/
 
 Просмотр отзывов на произведение:
->**GET** http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/
+>**GET** http://127.0.0.1/api/v1/titles/{title_id}/reviews/
 
 Создание отзывов на произведение:
->**POST** http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/
+>**POST** http://127.0.0.1/api/v1/titles/{title_id}/reviews/
 ```
 {
 "text": "string",
@@ -103,14 +103,14 @@ cd api_yamdb
 ```
 
 Просмотр комментариев к отзыву:
->**GET** http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{review_id}/commenta/
+>**GET** http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/commenta/
 
 Создание комментария к отзыву:
->**Post** http://127.0.0.1:8000/api/v1/titles/{title_id}/reviews/{review_id}/commenta/
+>**Post** http://127.0.0.1/api/v1/titles/{title_id}/reviews/{review_id}/commenta/
 ```
 {
 "text": "string"
 }
 ```
 Остальные запросы можно посмотреть в документации для API Yamdb:
-> http://127.0.0.1:8000/redoc/
+> http://127.0.0.1/redoc/
