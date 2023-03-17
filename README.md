@@ -53,10 +53,10 @@ docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 docker-compose exec web python manage.py collectstatic --no-input
 ```
-
+Сделать импорт из csv файлов:
 
 ```
-cd api_yamdb
+docker-compose exec web python manage.py addcsv
 ```
 
 
